@@ -784,6 +784,59 @@ button:hover {
 
 .profile-topbar-info-right a {background: #F44336;color: #fafafa;text-decoration: none;padding: 20px;display: block;text-align: center;font-family: 'Noto Sans Bold';border-radius: 16px;transition: .5s ease;}
 
+/* seats */
+.seat-heading {
+    text-align: center;
+    padding: 40px;
+}
+
+.seat-heading .h1 {
+    font-size: 48px;
+    font-family: 'Noto Sans Bold';
+}
+
+.seat-rows {
+    justify-content: center;
+    max-width: 485px;
+    margin: 0 auto;
+    display: flex;
+    gap: 100px;
+    background: #eee;
+    padding: 35px;
+}
+
+.seat.active {
+    background: #505050;
+}
+
+.seat:hover {
+    background: #8d8d8d;
+}
+
+.seat {
+    background: #6e6d6d;
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Noto Sans Bold';
+    color: #fff;
+    cursor: pointer;
+}
+
+.seat-row-inner {
+    display: flex;
+    gap: 5px;
+}
+
+.seat-row {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 /* media */
 
 @media (max-width: 767px) {
