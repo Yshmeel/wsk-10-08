@@ -58,6 +58,7 @@ header {
 .header__menu ul {
     display: flex;
     padding: 0;
+    flex-wrap: wrap;
     gap: 30px;
 }
 
@@ -140,6 +141,51 @@ header {
 .hero-cloud-2 g {
     fill: #03a9f459;
 }
+
+.hero-content-date {
+    color: #fff;
+    margin-top: 10%;
+    text-align: center;
+}
+
+.hero-content-date .h3 {
+    font-size: 47px;
+    font-family: 'Noto Sans';
+}
+
+.hero-content-date .h3 b {/* letter-spacing: 0.045em; */font-family: 'Noto Sans Bold';}
+
+.hero-content-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 60px;
+}
+
+.hero-content-item {
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+}
+
+.hero-content-item b {
+    font-size: 56px;
+    font-family: 'Roboto';
+}
+
+.hero-content-item span {
+    margin-top: 5px;
+    font-family: 'Noto Sans';
+}
+
+.hero-content-item.green b {
+    color: #5fff5f;
+}
+
+.hero-content-item.gray {
+    opacity: .6;
+}
+
 
 /* trust */
 
@@ -737,6 +783,132 @@ button:hover {
 }
 
 .profile-topbar-info-right a {background: #F44336;color: #fafafa;text-decoration: none;padding: 20px;display: block;text-align: center;font-family: 'Noto Sans Bold';border-radius: 16px;transition: .5s ease;}
+
+/* media */
+
+@media (max-width: 767px) {
+    header .container {
+        flex-direction: column;
+    }
+
+    .header__menu ul li {
+        align-self: center;
+        flex: 1 0;
+    }
+
+    footer .container {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-right ul {
+        flex-direction: column;
+        gap: 0;
+        padding: 0;
+        /* margin: 0; */
+    }
+
+    .footer-right ul li {
+        padding-left: 0;
+    }
+
+    .select-card-chance-description {
+        margin-top: 27px;
+    }
+
+    .profile-topbar-info {
+        flex-direction: column;
+    }
+
+    .profile-reservations table {
+        overflow: auto;
+    }
+
+    .profile-reservations {
+        overflow: auto;
+    }
+
+    .profile-topbar-info-right {
+        margin-top: 20px;
+    }
+
+    .hero .h1 {
+        font-size: 24px;
+        line-height: 48px;
+    }
+
+    .hero .container {
+        padding: 30px 40px;
+    }
+
+    .search {
+        margin: 40px 16px 80px;
+    }
+
+    .form-row {
+        flex-direction: column;
+    }
+
+    .form-group {
+        width: 100% !important;
+    }
+
+    .form-row button {
+        min-width: 100% !important;
+    }
+
+    .trust-background {
+        width: 100%;
+        height: 100%;
+    }
+
+    .promotions-content {
+        flex-wrap: wrap;
+    }
+
+    .promotions-card {
+        width: 100%;
+        flex: 0 1 auto;
+    }
+
+    .subscribe {
+        margin: 80px 16px;
+    }
+
+    .subscribe-content form {
+        flex-direction: column;
+    }
+
+    .subscribe-content .form-group input {
+        border-radius: 8px !important;
+    }
+
+    .subscribe-content .form-button button {
+        border-radius: 8px !important;
+    }
+
+    .subscribe-content .form-button {
+        margin-top: 20px;
+    }
+
+    .hero-content-date .h3 {
+        font-size: 36px;
+    }
+
+    .hero-content-item {
+        padding: 20px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .hero-content-item b {
+        font-size: 46px;
+    }
+
+    .hero-content-date {
+        margin-top: 39%;
+    }
+}
 
 /* fonts */
 
